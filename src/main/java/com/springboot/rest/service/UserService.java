@@ -49,4 +49,7 @@ public class UserService {
 		  return converterService.convertToDto(userObj);
 	  }
 
+	public void deleteById(String userId) {
+		userRepository.deleteById(userId);
+	}
 }
